@@ -1,9 +1,12 @@
-import logo from './logo.svg';
+import React from 'react'
+import Login from './Views/Login/login'
+
 
 
 function App() {
   return (
     <>
+    <Login/>
     </>
   );
  }

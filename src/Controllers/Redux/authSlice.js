@@ -6,10 +6,10 @@ const slice = createSlice({
         admin:'false',
         LoggedIn:false,
     },
-    reducer:{
+    reducers:{
         signIn:(state,action) => {
             const {name, password} = action.payload;
-            state.LoggedIn = ture;
+            state.LoggedIn = true;
             state.admin = true;
 
 

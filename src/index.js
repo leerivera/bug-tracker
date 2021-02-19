@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import bugReducer from './Controllers/Redux/bugReducer'
-import authReducer from './Controllers/Redux/authReducer'
-import userReducer from './Controllers/Redux/userReducer'
+import bugReducer from './Controllers/Redux/bugSlice'
+import authReducer from './Controllers/Redux/authSlice'
+import userReducer from './Controllers/Redux/userSlice'
 
 import { Provider } from 'react-redux';
-import { configureStore, combineReducers }  from '@reduxjs/toolkit'
+import { configureStore }  from '@reduxjs/toolkit'
+import { combineReducers } from 'redux'
+
 import App from './App';
 
 const reducer = combineReducers({
@@ -15,7 +17,7 @@ const reducer = combineReducers({
 })
 
 const store = configureStore({
-  reducer
+  reducer,
 })
 
 

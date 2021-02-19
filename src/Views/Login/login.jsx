@@ -10,7 +10,7 @@ export default () => {
         password:""
     })
 
-    function inputChange(e){
+    function inputChanged(e){
         setFormInput({
             ...formInput,
             [e.target.name]:e.target.value
@@ -19,15 +19,16 @@ export default () => {
 
     function submit(e){
         dispatch(signIn(formInput));
+        e.preventDefault();
     }
-    
+
     return(
         <div>
             <form>
                 <h1>Login;</h1>
-                <input name='name' placeholder='Name' onChange={} value={}></input>
-                <input name='password' type='password' placeholder='password' onChange={} value={}></input>
-                <button type="submit" onClick={}></button>
+                <input name='name' placeholder='Name' onChange={inputChanged} value={formInput.name}></input>
+                <input name='password' type='password' placeholder='password' onChange={inputChanged} value={formInput.password}></input>
+                <button type="submit" onClick={submit}></button>
             </form>
         </div>
 

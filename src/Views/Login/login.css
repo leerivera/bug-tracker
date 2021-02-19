@@ -1,0 +1,12 @@
+.loginBG{
+    width: 100vw;
+    height: 105vh;
+    background: url();
+    background-size: cover;
+    margin-left: -20.6vw;
+    margin-top: -27px;
+    background-color: rgba(0, 0, 0, 0.534);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    position: absolute;
+}
